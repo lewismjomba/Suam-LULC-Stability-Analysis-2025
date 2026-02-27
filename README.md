@@ -56,7 +56,7 @@ The research area covers a **20 km × 20 km (40,000 ha)** site on the slopes of 
 * **Model Collapse:** SVM exhibited significant instability, inflating cropland estimates while failing to predict other classes accurately.
 
 ### Reproduction:
-1. **GEE Script:** Access the [Interactive Snapshot](https://code.earthengine.google.com/9cd46be3da82dc9030a23ac2e354f5ab).
+1. **GEE Script:** Access the [Interactive Snapshot]([https://code.earthengine.google.com/9cd46be3da82dc9030a23ac2e354f5ab](https://code.earthengine.google.com/c517cd83def3761a11f592ebda6dc966)).
 2. **Python Plots:** Run the notebook in `/scripts` to reproduce the Disagreement Analysis (QD/AD) following the Pontius and Millones (2011) framework.
 
 ---
