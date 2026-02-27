@@ -10,6 +10,13 @@ This repository hosts the source code and datasets for the comparative analysis 
 
 The study assesses classifier stability and area estimation accuracy in the heterogeneous tropical landscape of the Suam region (Mt. Elgon), along the Kenyan-Ugandan border.
 
+## 1. Abstract
+Land use land cover (LULC) classification accuracy is essential in ensuring reliable evidenced-based environmental monitoring and policy making, especially within protected transboundary areas. This study evaluates the performance of five machine learning algorithms and their area estimation differences in the Suam region (40,000 ha) located near Mt. Elgon forest along the Kenyan-Ugandan border. 
+
+Utilizing an 82-band feature stack (spectral, texture, and terrain metrics) and 863 consensus-derived training samples, we generated LULC maps in Google Earth Engine (GEE). Results showed that **Random Forest (RF)** achieved the highest OA (93.4%) and mF1 (0.922). Conversely, **SVM** exhibited serious instability, leading to model collapse and heavily inflated cropland estimates. This research highlights the critical role of classifier choice in creating credible LULC maps for planning and management in heterogeneous tropical landscapes.
+
+**Keywords:** Machine Learning, Google Earth Engine, Mt. Elgon Forest, LULC, Accuracy assessment, Policy.
+
 ---
 
 ## 2. Study Area
@@ -30,38 +37,49 @@ The research area covers a **20 km × 20 km (40,000 ha)** site on the slopes of 
 * **Terrain/Hydro:** SRTM DEM and MERIT Hydro datasets.
 * **Feature Stack:** An **82-band hypercube** (30 spectral metrics, 40 spectral indices, 6 texture bands, and 6 terrain/hydro features).
 
-### Workflow:
-1. **Sample Generation:** Automated stratified random sampling derived from ESA WorldCover and Dynamic World consensus maps (**863 training samples**).
-2. **Classification:** Implementation of five algorithms within the Google Earth Engine (GEE) environment.
-3. **Evaluation:** Accuracy assessment using OA, Kappa, mF1, and Disagreement Analysis (QD/AD).
+### Classification Framework:
+1. **Sample Generation:** Automated stratified random sampling (**863 training samples**). 
+   * *Table 1: LULC classes description and training samples distribution (Refer to paper).*
+2. **Algorithms:** RF, GTB (GBM), CART, MD, and SVM.
+3. **Metrics:** OA, Kappa, mF1, Quantity Disagreement (QD), and Allocation Disagreement (AD).
 
 ![Methodological Workflow](images/Workflow.png)
 *Figure 2: Methodological workflow for LULC classification and area deviation analysis.*
 
 ---
 
-## 4. Repository Structure
+## 4. Key Results & Visualizations
+
+### Performance Metrics
+*Table 2: Accuracy and Disagreement Metrics across Classifiers (RF leads with 93.4% OA).*
+
+### Area Estimation and Deviations
+The choice of classifier significantly impacts the reported area of critical land covers, which has direct implications for transboundary policy.
+
+![Area Estimation](images/Figure3_Area_Estimation.png)
+*Figure 3: Land cover area estimation by each classifier.*
+
+
+
+![Area Deviations](images/Figure4_Deviations.png)
+*Figure 4: Area estimation deviations relative to RF baseline. Blue indicates overestimation, while dark brown indicates underestimation. Values in 'k' denote thousands of ha.*
+
+---
+
+## 5. Repository Structure
 * **`/scripts`**: 
     * `analysis_gee.js`: GEE JavaScript code for feature engineering and classifier execution.
-    * `visualizations_SUAM.ipynb`: Python notebook for generating error matrices and disagreement plots.
+    * `visualizations_SUAM.ipynb`: Python notebook for generating error matrices, area estimations, and deviation plots.
 * **`/data`**: 
-    * `training_samples_863.csv`: The validated training dataset.
+    * `training_samples_863.csv`: The validated training dataset derived from ESA/Dynamic World consensus.
 
 ---
 
-## 5. Key Results & Reproduction
+## 6. Reproduction
+1. **GEE Script:** Access the [Interactive Snapshot]([https://code.earthengine.google.com/9cd46be3da82dc9030a23ac2e354f5ab](https://code.earthengine.google.com/c517cd83def3761a11f592ebda6dc966).
+2. **Python Analysis:** Run the notebook in `/scripts` to reproduce the accuracy assessment and Figure 4 deviations.
 
-### Summary of Performance:
-* **Top Performer:** Random Forest (OA: 93.4%, K: 0.91, mF1: 0.922).
-* **Model Collapse:** SVM exhibited significant instability, inflating cropland estimates while failing to predict other classes accurately.
-
-### Reproduction:
-1. **GEE Script:** Access the [Interactive Snapshot]([https://code.earthengine.google.com/9cd46be3da82dc9030a23ac2e354f5ab](https://code.earthengine.google.com/c517cd83def3761a11f592ebda6dc966)).
-2. **Python Plots:** Run the notebook in `/scripts` to reproduce the Disagreement Analysis (QD/AD) following the Pontius and Millones (2011) framework.
-
----
-
-## 6. Citation & License
+## 7. Citation & License
 If you utilize this code or data, please cite:
 > *[Full citation for CP_3 - To be updated upon publication]*
 
