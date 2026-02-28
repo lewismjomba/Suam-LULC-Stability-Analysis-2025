@@ -3,7 +3,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![GEE-Code](https://img.shields.io/badge/Google_Earth_Engine-Script-blue)](https://code.earthengine.google.com/9cd46be3da82dc9030a23ac2e354f5ab)
-[![Python-Analysis](https://img.shields.io/badge/Python-Visualization-green?logo=python&logoColor=white)](scripts/visualizations_SUAM.ipynb)
+[![Python-Analysis](https://img.shields.io/badge/Python-Visualization-green?logo=python&logoColor=white)](scripts/Visualizations_SUAM.ipynb)
 
 ## 1. Project Overview
 This repository hosts the source code and datasets for the comparative analysis of five supervised machine learning algorithms: **Random Forest (RF)**, **Gradient Tree Boost (GTB)**, **Classification and Regression Trees (CART)**, **Minimum Distance (MD)**, and **Support Vector Machines (SVM)**. 
