@@ -76,7 +76,7 @@ The choice of classifier significantly impacts the reported area of critical lan
 ---
 
 ## 6. Reproduction
-1. **GEE Script:** Access the [Interactive Snapshot]([https://code.earthengine.google.com/9cd46be3da82dc9030a23ac2e354f5ab](https://code.earthengine.google.com/c517cd83def3761a11f592ebda6dc966).
+1. **GEE Script:** Access the [Interactive Snapshot]([https://code.earthengine.google.com/9cd46be3da82dc9030a23ac2e354f5ab])(https://code.earthengine.google.com/c517cd83def3761a11f592ebda6dc966).
 2. **Python Analysis:** Run the notebook in `/scripts` to reproduce the accuracy assessment and Figure 4 deviations.
 
 ## 7. Citation & License
