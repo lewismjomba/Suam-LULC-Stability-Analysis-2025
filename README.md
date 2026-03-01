@@ -42,7 +42,7 @@ The research area covers a **20 km × 20 km (40,000 ha)** site on the slopes of 
  
 [//]: # (This is a comment using the link hack)
 
-[//]: # (Table 1 LULC classes description and training samples distribution (Refer to paper) 
+
 
 [//]: # (This is a comment using the link hack)
 
