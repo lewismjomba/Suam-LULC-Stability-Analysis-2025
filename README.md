@@ -40,6 +40,18 @@ The research area covers a **20 km × 20 km (40,000 ha)** site on the slopes of 
 ### Classification Framework:
 1. **Sample Generation:** Automated stratified random sampling (**863 training samples**). 
    * *Table 1: LULC classes description and training samples distribution (Refer to paper).*
+### Table 1. LULC classes description and training samples distribution.
+
+| LULC class | Description | Total Samples (100%) | Training Set (70%) | Validation Set (30%) |
+| :--- | :--- | :--- | :--- | :--- |
+| FO | Area covered by trees (<2 m) | 300 | 210 | 90 |
+| GR | Includes grassland and shrublands with trees | 100 | 70 | 30 |
+| CR | Small- and large-scale agricultural areas | 300 | 210 | 90 |
+| BA | Areas with a vegetation cover (> 10%) | 28 | 20 | 8 |
+| WA | All water bodies including rivers and lakes | 35 | 24 | 11 |
+| BU | All areas that are built-up | 100 | 70 | 30 |
+| **TOTAL** | | **863** | **604** | **259** |
+
 2. **Algorithms:** RF, GTB (GBM), CART, MD, and SVM.
 3. **Metrics:** OA, Kappa, mF1, Quantity Disagreement (QD), and Allocation Disagreement (AD).
 
