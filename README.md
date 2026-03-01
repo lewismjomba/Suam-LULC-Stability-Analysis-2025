@@ -38,9 +38,13 @@ The research area covers a **20 km × 20 km (40,000 ha)** site on the slopes of 
 * **Feature Stack:** An **82-band hypercube** (30 spectral metrics, 40 spectral indices, 6 texture bands, and 6 terrain/hydro features).
 
 ### Classification Framework:
-1. **Sample Generation:** Automated stratified random sampling (**863 training samples**). 
+1. **Sample Generation:** Automated stratified random sampling (**863 training samples**).
+ 
 [//]: # (This is a comment using the link hack)
-[//]: # (* * Table 1: LULC classes description and training samples distribution (Refer to paper).*) 
+
+[//]: # (Table 1: LULC classes description and training samples distribution (Refer to paper) 
+
+[//]: # (This is a comment using the link hack)
 
 ### Table 1. LULC classes description and training samples distribution.
 
