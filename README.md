@@ -42,7 +42,7 @@ The research area covers a **20 km × 20 km (40,000 ha)** site on the slopes of 
  
 [//]: # (This is a comment using the link hack)
 
-[//]: # (Table 1: LULC classes description and training samples distribution (Refer to paper) 
+[//]: # (Table 1 LULC classes description and training samples distribution (Refer to paper) 
 
 [//]: # (This is a comment using the link hack)
 
@@ -68,7 +68,16 @@ The research area covers a **20 km × 20 km (40,000 ha)** site on the slopes of 
 ## 4. Key Results & Visualizations
 
 ### Performance Metrics
-*Table 2: Accuracy and Disagreement Metrics across Classifiers (RF leads with 93.4% OA).*
+
+### Table 2. Accuracy and Disagreement Metrics across Classifiers
+
+| Classifier | OA | QD | AD | K | mF1 |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **RF** | 93.4% | 3.3% | 3.3% | 0.91 | 0.922 |
+| **GTB** | 93.0% | 2.9% | 4.1% | 0.905 | 0.914 |
+| **CART** | 88.5% | 1.7% | 9.9% | 0.844 | 0.865 |
+| **MD** | 87.7% | 4.1% | 8.2% | 0.835 | 0.825 |
+| **SVM** | 32.5% | 67.5% | 0.0% | 0 | 0.163 |
 
 ### Area Estimation and Deviations
 The choice of classifier significantly impacts the reported area of critical land covers, which has direct implications for transboundary policy.
